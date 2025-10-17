@@ -1,4 +1,5 @@
 import 'package:clinic/core/Routing/routes.dart';
+import 'package:clinic/core/helper/Extention.dart';
 import 'package:clinic/core/themes/colors.dart';
 import 'package:clinic/core/themes/styles.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ class TextButtonOnBoarding extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         onPressed: (){
-         Navigator.pushNamed(context, Routers.LoginScr);
+          context.pushNamed(Routers.login);
         },
         style: ButtonStyle(
           backgroundColor: const WidgetStatePropertyAll(AppColor.mainBlue),

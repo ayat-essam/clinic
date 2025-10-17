@@ -31,7 +31,7 @@ class onBoarding extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                       const Gap(30),
-                      const TextButtonOnBoarding()
+                      TextButtonOnBoarding()
 
                       
 

@@ -1,7 +1,6 @@
 import 'package:clinic/core/Routing/routes.dart';
 import 'package:clinic/features/Home/HomePage.dart';
 import 'package:clinic/features/Home/details/Details%20Screen.dart';
-import 'package:clinic/features/Login/loginScr.dart';
 import 'package:clinic/features/onBoarding/onBording.dart';
 import 'package:flutter/material.dart';
 
@@ -11,8 +10,7 @@ class AppRouter {
     switch (settings.name) {
       case Routers.onBoarding:
         return MaterialPageRoute(builder: (_) => const onBoarding());
-      // case Routers.LoginScr:
-      //   return MaterialPageRoute(builder: (_) =>  LoginScr(isPassword: false));
+
       case Routers.HomePage:
         return MaterialPageRoute(builder: (_) => const Homepage());
       case Routers.detailsScreen:
