@@ -1,9 +1,8 @@
-import 'package:clinic/features/onBoarding/onBording.dart';
+import 'package:clinic/features/Home/splashScreen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'core/Routing/app router.dart';
 import 'core/themes/colors.dart';
 
 void main() {
@@ -21,7 +20,6 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
         minTextAdapt: true,
         child: MaterialApp(
-          useInheritedMediaQuery: true,
           locale: DevicePreview.locale(context),
           builder: DevicePreview.appBuilder,
           title: 'Doc App',
@@ -30,7 +28,7 @@ class MyApp extends StatelessWidget {
             scaffoldBackgroundColor: Colors.white,
           ),
           debugShowCheckedModeBanner: false,
-          home: onBoarding(),
+          home: const SpLashScreen(),
         )
     );
   }

@@ -1,4 +1,3 @@
-import 'package:clinic/core/themes/colors.dart';
 import 'package:clinic/core/themes/styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +14,7 @@ class DocLogoAndName extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SvgPicture.asset('assets/image SVG/Frame.svg'),
+        SvgPicture.asset('assets/imageSVG/Frame.svg'),
         Gap(10.w),
         Text("The Clinic",
         style: Styles.font24BlueBold

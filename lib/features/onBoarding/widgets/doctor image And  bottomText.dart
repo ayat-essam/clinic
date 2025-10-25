@@ -9,7 +9,7 @@ class DoctorImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        SvgPicture.asset('assets/image SVG/FrameBack.svg'),
+        SvgPicture.asset('assets/imageSVG/vectorBehaindDoctor.svg'),
         Container(
           foregroundDecoration: BoxDecoration(
             gradient: LinearGradient(
@@ -22,7 +22,7 @@ class DoctorImage extends StatelessWidget {
               stops: const [0.14,0.4]
             ),
           ),
-          child: Image.asset('assets/image/doctor-onBoarding.png'),
+          child: Image.asset('assets/images/Doctor.png'),
         ),
         Positioned(
           right: 0 ,
