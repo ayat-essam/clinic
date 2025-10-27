@@ -11,7 +11,7 @@ class TextButtonOnBoarding extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         onPressed: (){
-          context.pushNamed(Routers.login);
+          context.pushNamed(Routers.LoginScr);
         },
         style: ButtonStyle(
           backgroundColor: const WidgetStatePropertyAll(AppColor.mainBlue),

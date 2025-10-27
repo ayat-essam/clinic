@@ -1,18 +1,17 @@
 import 'package:clinic/core/Routing/routes.dart';
 import 'package:clinic/core/themes/colors.dart';
 import 'package:clinic/core/themes/styles.dart';
-import 'package:clinic/features/Login/widgets/TextFieled.dart';
-import 'package:clinic/features/Login/widgets/socialMediaButton.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
-import 'button.dart';
+import '../button.dart';
+import 'widgets/TextFieled.dart';
+import 'widgets/socialMediaButton.dart';
 
 class LoginScr extends StatefulWidget {
-
-  const LoginScr({  required this.isPassword, super.key});
   final bool isPassword ;
+  const LoginScr({  required this.isPassword, super.key});
+
 
   @override
   State<LoginScr> createState() => _LoginScrState();
